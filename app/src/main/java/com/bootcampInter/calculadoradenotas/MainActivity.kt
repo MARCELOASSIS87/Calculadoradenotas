@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         val resultado = textViewResultado
 
         btCalcular.setOnClickListener {
-
+            //botao que calcula
             val nota1 = Integer.parseInt(edTextnota1.text.toString())
             val nota2 = Integer.parseInt(edTextNota2.text.toString())
             val media = (nota1+nota2)/2
