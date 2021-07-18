@@ -1,5 +1,6 @@
 package com.bootcampInter.calculadoradenotas
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -23,8 +24,10 @@ class MainActivity : AppCompatActivity() {
 
             if (media >= 6 && faltas <= 10){
                 resultado.setText("Aluno Aprovado a media foi: \n" + media + "\n" + "faltas:"+faltas)
+                resultado.setTextColor(Color.GREEN)
             }else {
                 resultado.setText("Aluno Reprovado a media foi: \n" + media + "\n" + "faltas:" + faltas)
+                resultado.setTextColor(Color.RED)
             }
         }
 
